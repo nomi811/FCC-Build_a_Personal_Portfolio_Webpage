@@ -1,0 +1,317 @@
+/*
+ * Globals
+ */
+
+
+html,
+body {
+  // height: 100%;
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #03c4eb;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+  color: #03c5ec;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/*--------------------
+  welcome
+--------------------*/
+
+#welcome {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/flower.png) top center fixed;
+  background-size: cover;
+}
+
+#welcome .welcome-logo {
+  margin: 20px;
+}
+
+#welcome .welcome-logo img {
+  max-width: 100px;
+}
+
+#welcome .welcome-container {
+  background: rgba(0, 0, 0, 0.8);
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#welcome h1 {
+  margin: 30px 0 10px 0;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#welcome h2 {
+  color: #999;
+  margin-bottom: 50px;
+}
+
+#welcome .actions a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+/*----------------
+  Header
+-------------------*/
+
+#header {
+  background: #111;
+  padding: 20px 0;
+  height: 90px;
+}
+
+#header #logo {
+  float: left;
+}
+
+#header #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 6px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header #logo h1 a, #header #logo h1 a:hover {
+  color: #fff;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 50px;
+}
+
+/*-------------------
+  Navigation Menu
+---------------------*/
+
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+#nav-menu-container {
+  float: right;
+  margin: 5px 0;
+}
+
+.nav-menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  outline: none;
+}
+
+.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
+  color: #03c4eb;
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 15px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.nav-menu ul li {
+  background: #fff;
+  border-top: 1px solid #f4f4f4;
+}
+
+.nav-menu ul li:first-child {
+  border-top: 0;
+}
+
+.nav-menu ul li:hover {
+  background: #f6f6f6;
+}
+
+.nav-menu ul li a {
+  color: #333;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+
+/*--------------------------
+# Sections
+----------------------------*/
+
+/*--------------------------
+  Sections Common
+----------------------------*/
+
+.section-title {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section-description {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title-divider {
+  width: 50px;
+  height: 3px;
+  background: #03c4eb;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/*--------------------
+  About Section
+---------------------*/
+
+#about {
+  background: #fff;
+  padding: 80px 0;
+}
+
+#about .about-container {
+  background: url(../img/me-circle.png) left top no-repeat;
+}
+
+#about .about-content {
+  background: #fff;
+}
+
+#about .about-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#about .about-text {
+  line-height: 26px;
+}
+
+#about .about-text:last-child {
+  margin-bottom: 0;
+}
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
