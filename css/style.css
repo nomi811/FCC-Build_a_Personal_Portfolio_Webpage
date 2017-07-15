@@ -492,6 +492,23 @@ Parallax Section
   color: #fff;
 }
 
+#parallax .social {
+  margin-top: 15px;
+}
+
+#parallax .social a {
+  color: #b3b3b3;
+}
+
+#parallax .social a:hover {
+  color: #03c4eb;
+}
+
+#parallax .social i {
+  font-size: 60px;
+  margin: 0 10px;
+}
+
 /*-----------------
   Portfolio Section
 -------------------*/
