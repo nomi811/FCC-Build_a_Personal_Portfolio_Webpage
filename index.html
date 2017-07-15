@@ -11,7 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate-css/animate.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
@@ -32,10 +36,11 @@
 
     <section id="welcome">
       <div class="welcome-container">
+        <div class="wow fadeIn"></div>
         <div class="welcome-logo"></div>
 
-        <h1>Welcome!</h1>
-        <h2>My portfolio</h2>
+        <h1>Nomi Vos</h1>
+        <h2>My Portfolio <span class="rotating">is beautiful!, is awesome!, is amazing!</span></h2>
       </div>
     </section>
 
@@ -57,7 +62,6 @@
             </li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -67,93 +71,126 @@
       About Section
     ==========================-->
 
-      <section id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="section-title">About</h3>
-              <div class="section-title-divider"></div>
-                <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
-            </div>
+    <section id="about">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">About</h3>
+            <div class="section-title-divider"></div>
+              <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
           </div>
         </div>
-        <div class="container about-container">
-          <div class="row">
-            <div class="col-md-6 col-md-push-6 about-content">
-              <h2 class="about-title">Hi! My name is Nomi Vos</h2>
-              <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-              <p class="about-text">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--=======================
-        Portfolio Section
-      =========================-->
-
-      <section id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="section-title">Portfolio</h3>
-              <div class="section-title-divider"></div>
-              <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-3">
-              <a href="" class="portfolio-item" style="background-image: url(img/website.png);">
-                <div class="details">
-                  <h4>Portfolio 1</h4>
-                  <span>item 1</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-3">
-              <a href="" class="portfolio-item" style="background-image: url(img/Bowling-challenge.png);">
-                <div class="details">
-                  <h4>Portfolio 2</h4>
-                  <span>item 2</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-3">
-              <a href="" class="portfolio-item" style="background-image: url(img/meal-planner.png);">
-                <div class="details">
-                  <h4>Portfolio 3</h4>
-                  <span>item 3</span>
-                </div>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Created by Nomi Vos 2017
-                <!-- <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>. -->
-              </p>
-            </div>
-          </div>
-
-        </div>
-
       </div>
+      <div class="container about-container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-6 col-md-push-6 about-content">
+            <h2 class="about-title">Hi! My name is Nomi Vos</h2>
+            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+            <p class="about-text">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </div>
+    <!--=====================
+      Parallax Section
+    =========================-->
+
+    <section id="parallax">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-8">
+            <h3 class="parallax-title">Cool Parallax Section</h3>
+            <p class="parallax-text">I love these slidy things!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=======================
+      Portfolio Section
+    =========================-->
+
+    <section id="portfolio">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Portfolio</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <a href="" class="portfolio-item" style="background-image: url(img/website.png);">
+              <div class="details">
+                <h4>Portfolio 1</h4>
+                <span>item 1</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="" class="portfolio-item" style="background-image: url(img/Bowling-challenge.png);">
+              <div class="details">
+                <h4>Portfolio 2</h4>
+                <span>item 2</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="" class="portfolio-item" style="background-image: url(img/mealplanner_sqr.png);">
+              <div class="details">
+                <h4>Portfolio 3</h4>
+                <span>item 3</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--=========================
+      Footer
+    ============================-->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              Created by <strong>Nomi Vos</strong>
+            </div>
+            <div class="credits">
+              customized off of <strong>Imperial Theme</strong> by <a href="https://bootstrapmade.com/">BootstrapMade</a> as a base
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="lib/js/bootstrap.min.js"></script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/morphext/morphext.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/stickyjs/sticky.js"></script>
+    <script src="lib/easing/easing.js"></script>
+
+    <!-- Template Specific Custom Javascript File -->
+    <script src="js/custom.js"></script>
+
+    <!-- <script src="contactform/contactform.js"></script> -->
 
   </body>
 </html>

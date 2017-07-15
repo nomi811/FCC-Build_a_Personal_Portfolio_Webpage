@@ -5,7 +5,7 @@
 
 html,
 body {
-  // height: 100%;
+  height: 100%;
   background: #fff;
   color: #666666;
   font-family: "Open Sans", sans-serif;
@@ -77,6 +77,10 @@ h1, h2, h3, h4, h5, h5 {
   margin-bottom: 50px;
 }
 
+#hero .rotating > .animated {
+  display: inline-block;
+}
+
 #welcome .actions a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -123,6 +127,10 @@ h1, h2, h3, h4, h5, h5 {
   padding: 0;
   margin: 0;
   max-height: 50px;
+}
+
+.is-sticky #header {
+  background: rgba(0, 0, 0, 0.85);
 }
 
 /*-------------------
@@ -212,6 +220,114 @@ h1, h2, h3, h4, h5, h5 {
   margin: 0;
 }
 
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+}
+
+#mobile-nav-toggle i {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #03C4EB;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #03C4EB;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
 
 /*--------------------------
 # Sections
@@ -247,8 +363,10 @@ h1, h2, h3, h4, h5, h5 {
 ---------------------*/
 
 #about {
-  background: #fff;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/whiteflowers.png) fixed center center;
+  background-size: cover;
   padding: 80px 0;
+
 }
 
 #about .about-container {
@@ -256,7 +374,8 @@ h1, h2, h3, h4, h5, h5 {
 }
 
 #about .about-content {
-  background: #fff;
+  /*background: #fff;*/
+  padding-bottom: 80px;
 }
 
 #about .about-title {
@@ -271,6 +390,26 @@ h1, h2, h3, h4, h5, h5 {
 
 #about .about-text:last-child {
   margin-bottom: 0;
+}
+
+/*-----------------
+Parallax Section
+--------------------*/
+
+#parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/flower_background.jpg) fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#parallax .parallax-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#parallax .parallax-text {
+  color: #fff;
 }
 
 /*-----------------
@@ -340,46 +479,23 @@ h1, h2, h3, h4, h5, h5 {
   transform: translate3d(0, 0, 0);
 }
 
-/*
+/*---------------
  * Footer
- */
+ ---------------*/
 
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-}
+ #footer {
+   background: #111;
+   padding: 30px 0;
+   color: #fff;
+ }
 
+ #footer .copyright {
+   text-align: center;
+ }
 
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
-}
+ #footer .credits {
+   padding-top: 10px;
+   text-align: center;
+   font-size: 13px;
+   color: #ccc;
+ }
