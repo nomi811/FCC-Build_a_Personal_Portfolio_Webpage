@@ -35,6 +35,13 @@ h1,h2, h3, h4, h5, h5 {
   padding: 0;
 }
 
+hr {
+  width: 80px;
+  height: 1px;
+  background: #666666;
+  margin: 10px auto;
+}
+
 #preloader {
   position: fixed;
   left: 0;
