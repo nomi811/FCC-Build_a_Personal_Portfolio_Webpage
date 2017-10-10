@@ -9,7 +9,7 @@ If you'd like to see my progress and other projects I've done, go to my [freeCod
 
 Our assignment was to build a one page portfolio webpage with navigation links, and showing the projects we've done.
 
-I found a free Bootstrap theme that I customized.
+I found a free Bootstrap theme called [Imperial](https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/) by [BootstrapMade](https://bootstrapmade.com/) that I customized.
 
 ### Technologies
 - Bootstrap
